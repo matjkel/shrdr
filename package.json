@@ -1,0 +1,19 @@
+{
+  "name": "shreddaze",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "description": "A bare bones app that let's you shred with your buds",
+  "dependencies": {
+    "express": "^4.13.1",
+    "body-parser": "^1.14.1",
+    "nodemon": "^1.3.7"
+  },
+  "devDependencies": {
+  },
+  "author": "matjkel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matjkel/shred-daze/issues"
+  },
+  "homepage": "https://github.com/matjkel/shred-daze"
+}

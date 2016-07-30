@@ -1,0 +1,59 @@
+<div class='jumbotron'>
+	<img class='wglogo' src="wglogo.png" height="50"/>
+  <h1>{{ header }}</h1>
+  <div class='container'>
+  <h2>Get weather: </h2>
+  <form name='weatherForm' ng-submit='getWeather()'>
+  
+  	<button class='btn'>now</button>
+  </form>
+  <br>
+  <form name='tenDay' ng-submit='getForecast()'>
+	<button class='btn'>10 day</button>	
+  </form>
+  </div>
+  <a ui-sref='shreds'>Shreds</a>
+</div>
+
+<hr> 
+<div class="holder">
+	<div class="weather">
+		<h1>Current weather: </h1>
+		<img src="{{icon}}"/>
+		<p>{{weather}}</p>
+		<p>{{feels}}</p>
+		<p>{{wind}}</p>
+		<h5>{{time}}</h5>
+	</div>
+<br>
+	<div class="forecast">
+		<h1> 10-Day: </h1>
+		<br>
+		<div class='try'><h4>{{mday}}</h4><img src='{{mday_icon}}'/><h4>{{mday_temp}}</h4><br></div>
+		<div class='try'><h4>{{tday}}</h4><img src='{{tday_icon}}'/><h4>{{tday_temp}}</h4></div>
+		<div class='try'><h4>{{wday}}</h4><img src='{{wday_icon}}'/><h4>{{wday_temp}}</h4></div>
+		<div class='try'><h4>{{thday}}</h4><img src='{{thday_icon}}'/><h4>{{thday_temp}}</h4></div>
+		<div class='try'><h4>{{fday}}</h4><img src='{{fday_icon}}'/><h4>{{fday_temp}}</h4></div>
+		<div class='try'><h4>{{sday}}</h4><img src='{{sday_icon}}'/><h4>{{sday_temp}}</h4></div>
+		<div class='try'><h4>{{snday}}</h4><img src='{{snday_icon}}'/><h4>{{snday_temp}}</h4></div>
+		<div class='try'><h4>{{mnday}}</h4><img src='{{mnday_icon}}'/><h4>{{mnday_temp}}</h4></div>
+		<div class='try'><h4>{{tuday}}</h4><img src='{{tuday_icon}}'/><h4>{{tuday_temp}}</h4></div>
+		<div class='try'><h4>{{weday}}</h4><img src='{{weday_icon}}'/><h4>{{weday_temp}}</h4></div>
+	</div>
+</div>
+<div class="sesh">
+	<div ng-controller="WeatherCtrl">
+		<form ng-model='user'>
+		Where: <input type="text" ng-model="user.where" /><br />
+		
+		When: <input type="text" ng-model="user.when" /><br />
+		
+		Buds: <input type="text" ng-model="user.buds" /> <br/>
+
+		<input type="submit" ng-click="createSesh(user)" value="Let's Shred" />
+		</form>
+	</div>
+</div>
+
+
+

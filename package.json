@@ -1,5 +1,5 @@
 {
-  "name": "shreddaze",
+  "name": "shrdr",
   "version": "1.0.0",
   "main": "server/index.js",
   "description": "A bare bones app that let's you shred with your buds",
@@ -13,7 +13,7 @@
   "author": "matjkel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matjkel/shred-daze/issues"
+    "url": "https://github.com/matjkel/shrdr/issues"
   },
-  "homepage": "https://github.com/matjkel/shred-daze"
+  "homepage": "https://github.com/matjkel/shrdr"
 }
